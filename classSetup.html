@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -18,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
   </head>
 
@@ -57,9 +55,54 @@
       </div>
     </nav>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      UNDER CONSTRUCTION
-    </h1>
+    <section class="page-section">
+      <div class="container ctb">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+                <form>
+                  <fieldset>
+                    <br>
+                    <h3>Add Class</h3>
+                    <br>
+                    <label for="selectTerm">Select Term: </label>
+                    <select name="termMenu" id="termMenu">
+                      <option value="spring">Spring 2018</option>
+                      <option value="summer">Summer 2018</option>
+                    </select>
+                    <br><br>
+                    <label for="courseName">Course Name: </label>
+                    <select name="nameMenu" id="nameMenu">
+                      <option value="cs361">CS 361</option>
+                      <option value="cs352">CS 352</option>
+                      <option value="cs340">CS 340</option>
+                      <option value="cs290">CS 290</option>
+                    </select>
+                    <br><br>
+                    <label for="courseId">Course ID: </label>
+                    <select name="idMenu" id="idMenu">
+                      <option value="cs361id">12345</option>
+                      <option value="cs352id">54821</option>
+                      <option value="cs340id">65128</option>
+                      <option value="cs290id">95314</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" id="submit">
+
+                  </fieldset>
+                </form>
+
+                <div>
+                  <br><br>
+                  <h3>Course List:</h3>
+                  <ul id="myList">
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <footer class="footer text-faded text-center py-5">
       <div class="container">
@@ -70,6 +113,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/us11.js"></script>
 
   </body>
 
