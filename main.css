@@ -29,11 +29,12 @@ header
 {
 	text-align: center;
 	padding: 50px 0px;
-	background-color: #3a8ed6;
+	background-color: #301A13;
 	border-bottom: 3px solid #7EB1C2;
 }
 header h1
 {
+	color:#E6A756;
 	font-size: 60px;
 }
 
@@ -42,7 +43,7 @@ header h1
 section
 {
 	background:
-		linear-gradient(#69afed, transparent 50%),
+		linear-gradient(#E6A756, transparent 50%),
 		linear-gradient(to top, #fff, transparent 50%),
 		url('school.jpg') center no-repeat;
 	background-size:cover;
@@ -58,12 +59,12 @@ section p
 section form
 {
 	font-size: 25px;
-	background-color: white;
+	background-color: #E6A756;
 	border: 4px solid #7EB1C2;
 	border-radius: 5px;
 	padding: 30px;
 	margin: 100px 0px;
-	color: #878787;
+	color: #382529;
 }
 section form input
 {
@@ -78,14 +79,14 @@ section form input
 {
 	padding: 10px;
 	width: 30%;
-	color: white;
+	color:#E6A756;
 	margin-top:20px;
-	background-color: #69afed;
+	background-color: #382529;
 }
 #validate:hover
 {
 	cursor: pointer;
-	background: #3a8ed6;
+	background: #6C5E5A;
 	-webkit-transition: background 300ms;
 	-moz-transition: background 300ms;
 	transition: background 300ms;
@@ -100,7 +101,8 @@ section form input
 /* footer styles */
 footer
 {
-	background-color: #3a8ed6;
+	color:#E6A756;
+	background-color: #301A13;
 	border-top: 3px solid #7EB1C2;
 	padding: 10px 0px;
 }
