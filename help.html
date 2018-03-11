@@ -9,7 +9,6 @@
     <meta name="author" content="">
 
     <title>Classroom Engagement Monitoring</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
   </head>
 
@@ -58,8 +57,38 @@
     </nav>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      UNDER CONSTRUCTION
+      HELP/SUPPORT
     </h1>
+    <section class="page-section">
+      <div class="container ctb">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+		<h3>Alert Notification Status</h3>
+                    <br>
+                    <label for="selectTerm">Alarm ON/OFF: </label>
+                    <select id="alertStatus" name="alarmonoff" id="alarmonoff">
+                      <option value="on">Notifications ON</option>
+                      <option value="off">Notifications OFF</option>
+                    </select>
+					<button onclick="alertStatusFunction()">Submit Alert Notification Change</button>
+                    <br><br>
+					<span id="alertStatusText" >ALERT NOTIFICATIONS ON</span>
+	        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		<script>
+		function alertStatusFunction(){
+		var alertStatus = document.getElementById("alertStatus");
+		var alertStatusText = document.getElementById("alertStatusText");
+		if (alertStatus.value == "on"){
+			alertStatusText.innerHTML ="ALERT NOTIFICATIONS ON";
+		}else{ alertStatusText.innerHTML ="ALERT NOTIFICATIONS OFF";}
+		}
+		</script>
+	</div>
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
