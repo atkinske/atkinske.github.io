@@ -27,32 +27,74 @@
 				var number = Math.round(Math.random());
 				if (number == 0)
 				{
-					document.getElementById("result").textContent = "Monitoring Sensor is OFFLINE";
-					document.getElementById("result2").textContent = "";
+					document.getElementById("result").textContent = "Facial Monitoring Sensor is OFFLINE";
+					document.getElementById("result2").textContent = "";			
+					var number = Math.round(Math.random());	
+					if(number == 0)
+					{
+						document.getElementById("result3").textContent = "Head Gaze Sensor is OFFLINE";
+						document.getElementById("result4").textContent = "";						
+					}
+					else
+					{
+						document.getElementById("result4").textContent = "Head Gaze Sensor is ONLINE";
+						document.getElementById("result3").textContent = "";	
+					}
+					var number = Math.round(Math.random());	
+					if(number == 0)
+					{
+						document.getElementById("result5").textContent = "Body Posture Sensor is OFFLINE";
+						document.getElementById("result6").textContent = "";						
+					}
+					else
+					{
+						document.getElementById("result6").textContent = "Body Posture Sensor is ONLINE";
+						document.getElementById("result5").textContent = "";	
+					}						
 				}
 				else
 				{
-					document.getElementById("result2").textContent = "Monitoring Sensor is ONLINE";
+					document.getElementById("result2").textContent = "Facial Monitoring Sensor is ONLINE";
 					document.getElementById("result").textContent = "";
+					document.getElementById("result4").textContent = "Head Gaze Sensor is ONLINE";
+					document.getElementById("result3").textContent = "";
+					document.getElementById("result6").textContent = "Body Posture Sensor is ONLINE";
+					document.getElementById("result5").textContent = "";					
 				}
+
+				
+				
 				event.preventDefault(); 
 			})
 		}
 	</script>
 	
 	<style>
-		#result
+		#result, #result3, #result5
 		{
 			font-weight: bold;
 			font-size: 2em;
 			color: red;
 		}
-		#result2
+		#result2, #result4, #result6
 		{
 			font-weight: bold;
 			font-size: 2em;
 			color: green;
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
     </style>
 
 
@@ -106,7 +148,11 @@
 				<button id="validate">Check Sensor Status</button>
 				<br><br>
 				<span id="result" ></span>
-				<span id="result2" ></span>
+				<span id="result2" ></span><br>
+				<span id="result3" ></span>
+				<span id="result4" ></span><br>		
+				<span id="result5" ></span>
+				<span id="result6" ></span>				
 	        </div>
           </div>
         </div>
