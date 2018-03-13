@@ -18,7 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
-	
+
 	<script>
 		document.addEventListener('DOMContentLoaded', bindButton);
 
@@ -28,29 +28,29 @@
 				if (number == 0)
 				{
 					document.getElementById("result").textContent = "Facial Monitoring Sensor is OFFLINE";
-					document.getElementById("result2").textContent = "";			
-					var number = Math.round(Math.random());	
+					document.getElementById("result2").textContent = "";
+					var number = Math.round(Math.random());
 					if(number == 0)
 					{
 						document.getElementById("result3").textContent = "Head Gaze Sensor is OFFLINE";
-						document.getElementById("result4").textContent = "";						
+						document.getElementById("result4").textContent = "";
 					}
 					else
 					{
 						document.getElementById("result4").textContent = "Head Gaze Sensor is ONLINE";
-						document.getElementById("result3").textContent = "";	
+						document.getElementById("result3").textContent = "";
 					}
-					var number = Math.round(Math.random());	
+					var number = Math.round(Math.random());
 					if(number == 0)
 					{
 						document.getElementById("result5").textContent = "Body Posture Sensor is OFFLINE";
-						document.getElementById("result6").textContent = "";						
+						document.getElementById("result6").textContent = "";
 					}
 					else
 					{
 						document.getElementById("result6").textContent = "Body Posture Sensor is ONLINE";
-						document.getElementById("result5").textContent = "";	
-					}						
+						document.getElementById("result5").textContent = "";
+					}
 				}
 				else
 				{
@@ -59,16 +59,16 @@
 					document.getElementById("result4").textContent = "Head Gaze Sensor is ONLINE";
 					document.getElementById("result3").textContent = "";
 					document.getElementById("result6").textContent = "Body Posture Sensor is ONLINE";
-					document.getElementById("result5").textContent = "";					
+					document.getElementById("result5").textContent = "";
 				}
 
-				
-				
-				event.preventDefault(); 
+
+
+				event.preventDefault();
 			})
 		}
 	</script>
-	
+
 	<style>
 		#result, #result3, #result5
 		{
@@ -82,19 +82,19 @@
 			font-size: 2em;
 			color: green;
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
     </style>
 
 
@@ -128,7 +128,7 @@
               <a class="nav-link text-uppercase text-expanded" href="dashboard.html">Dashboard of Results</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="help.html">Help/Support</a>
+              <a class="nav-link text-uppercase text-expanded" href="settings.html">Settings</a>
             </li>
           </ul>
         </div>
@@ -150,9 +150,9 @@
 				<span id="result" ></span>
 				<span id="result2" ></span><br>
 				<span id="result3" ></span>
-				<span id="result4" ></span><br>		
+				<span id="result4" ></span><br>
 				<span id="result5" ></span>
-				<span id="result6" ></span>				
+				<span id="result6" ></span>
 	        </div>
           </div>
         </div>
