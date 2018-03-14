@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
   </head>
 
@@ -50,16 +50,45 @@
               <a class="nav-link text-uppercase text-expanded" href="dashboard.html">Dashboard of Results</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="settings.html">Settings</a>
+              <a class="nav-link text-uppercase text-expanded" href="help.html">Help/Support</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      UNDER CONSTRUCTION
-    </h1>
+    <section class="page-section">
+      <div class="container ctb">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+                <form>
+                  <fieldset>
+                    <br>
+                    <h3>Select Class and Date</h3>
+                    <br>
+                    <label for="courseName">Course Name: </label>
+                    <select name="nameMenu" id="nameMenu">
+                      <option value="cs361">CS 361</option>
+                      <option value="cs352">CS 352</option>
+                      <option value="cs340">CS 340</option>
+                      <option value="cs290">CS 290</option>
+                    </select>
+                    <br><br>
+                      <input id="date" type="date">
+                    <br><br>
+                    <button onclick="myFunction()">Submit</button>
+                    <br><br>
+                       <center><button type="button">Show Class Results</button></center> &nbsp;          <center><button type="button">Show Student Results</button></center>
+                    <br><br>
+                  </fieldset>
+                </form>
+          </div>
+          <center><div id="myDIV"><iframe width="560" height="315" src="https://www.youtube.com/embed/mJRsSbWR3Mc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></center>
+          <br><br>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
@@ -70,6 +99,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard.js"></script>
 
   </body>
 
